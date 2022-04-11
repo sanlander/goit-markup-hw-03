@@ -157,6 +157,8 @@ padding-top: 200px;
 }
 .our-work .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .our-work > .item:not(:last-child) {
     margin-right: 30px;
@@ -225,6 +227,8 @@ margin-right: 30px;
 }
 .examples .img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .examples-title {
     padding: 20px 24px;
