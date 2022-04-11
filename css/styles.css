@@ -4,6 +4,7 @@
     --second-text-color: #757575;
     --primary-background-color: #FFFFFF;
     --accent-background-color: #2196F3;
+    --button-primary-background: #F5F4FA;
 }
 
 body {
@@ -13,8 +14,20 @@ body {
     color: var(--primary-text-color)
 }
 
+.conteiner {
+width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+
+outline: 2px solid salmon;
+}
+
 .list {
     list-style: none;
+}
+/* Header */
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 /* Logo */
 .logo-header, .logo-footer {
@@ -134,7 +147,7 @@ text-align: center;
 /* Button */
 .button-filter {
     color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+    background-color: var(--button-primary-background);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -142,10 +155,23 @@ text-align: center;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    padding: 6px 22px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 2px 8px;
+    height: 38px;
+    border: 1px solid transparent;
+    1box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button-filter:hover, .button-filter:focus {
     color: #FFFFFF;
     background-color: var(--accent-background-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button-order {
