@@ -38,13 +38,11 @@ padding: 0;
 }
 /* Header */
 .header {
-    ;
     border-bottom: 1px solid #ECECEC;
 }
 .cont-header {
     display: flex;
     align-items: center;
-    height: 79px
 }
 
 /* Logo */
