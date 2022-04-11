@@ -1,0 +1,186 @@
+:root {
+    --primary-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --second-text-color: #757575;
+    --primary-background-color: #FFFFFF;
+    --accent-background-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+
+.list {
+    list-style: none;
+}
+/* Logo */
+.logo-header, .logo-footer {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-header {
+    color: #000000;
+}
+.logo-footer {
+    color: #FFFFFF;
+}
+.logo-web {
+    color: var(--accent-text-color);
+}
+
+/* Menu nav + Contacts*/
+.menu-nav .link, .contacts .link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.menu-nav .link.current {
+    color: var(--accent-text-color);
+}
+
+.menu-nav .link:hover, .menu-nav .link:focus, .contacts .link:hover, .contacts .link:focus {
+    color: var(--accent-text-color);
+}
+.contacts .link {
+color: var(--second-text-color);
+}
+
+/* Herro */
+.section-herro {
+background-image: url(../images/hero.jpg);
+width: 100%;
+height: 600px;
+text-align: center;
+}
+.herro-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/* Feature */
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.feature-text {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/* Our-work */
+.our-work-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Our-team */
+.our-team {
+    background-color: #F5F4FA;
+}
+.full-name, .post {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.post {
+    font-weight: 400;
+    color: var(--second-text-color);
+}
+
+
+/* Portfolio */
+.work-examples {
+    text-decoration: none;
+   }
+
+.work-examples-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.work-examples-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/* Button */
+.button-filter {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.button-filter:hover, .button-filter:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-background-color);
+}
+
+.button-order {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-background-color);
+    cursor: pointer;
+}
+.button-order:hover, .button-order:focus {
+    background-color: #188CE8;
+}
+
+/* Footer */
+.footer {
+    background-color: #2F303A;
+}
+.address {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-address {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-contacts {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover, .footer-contacts:focus {
+    color: var(--accent-text-color);
+}
