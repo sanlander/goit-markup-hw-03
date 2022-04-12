@@ -144,19 +144,19 @@ padding-top: 200px;
 }
 
 /* Our-work */
-.our-work {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
 .our-work .img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+.our-work {
+    display: flex;
+    justify-content: space-between;
+}
 .our-work > .item:not(:last-child) {
     margin-right: 30px;
 }
+
 .our-work-title, .team-title {
     font-weight: 700;
     font-size: 36px;
