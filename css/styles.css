@@ -20,12 +20,12 @@ width: 1200px;
 margin: 0 auto;
 padding: 0 15px;
 
-/* outline: 2px solid salmon; */
+outline: 2px solid salmon;
 }
 
-h1, h2, h3, h4, h5, p, {
-margin: 0;
-padding: 0;
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
 }
 
 .list {
@@ -107,6 +107,7 @@ background-color: var(--footer-background-color);
 height: 600px;
 text-align: center;
 padding-top: 200px;
+padding-bottom: 200px;
 }
 .herro-title {
     font-weight: 900;
@@ -122,8 +123,13 @@ padding-top: 200px;
 /* Feature */
 .feature {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
+
+.feature .item {
+    width: 270px;
+}
+
 .feature .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -137,6 +143,7 @@ padding-top: 200px;
     margin-bottom: 10px;
 }
 .feature-text {
+    min-height: 75px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -144,6 +151,9 @@ padding-top: 200px;
 }
 
 /* Our-work */
+.section-our-work {
+    padding-top: 0;
+}
 .our-work .img {
     display: block;
     max-width: 100%;
@@ -188,7 +198,6 @@ margin-right: 30px;
     display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 30px;
 }
 
 .full-name, .post {
@@ -198,14 +207,15 @@ margin-right: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-
 }
 .post {
     font-weight: 400;
     color: var(--second-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
-
+.team-info {
+    padding: 30px 0;
+}
 
 /* Portfolio */
 .examples {
@@ -310,6 +320,10 @@ margin-right: 8px;
     color: #FFFFFF;
     background-color: var(--accent-background-color);
     cursor: pointer;
+
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .button-order:hover, .button-order:focus {
     background-color: #188CE8;
@@ -329,6 +343,8 @@ margin-right: 8px;
     text-decoration: none;
     color: #FFFFFF;
     display: inline-block;
+}
+.address .item:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-contacts {
