@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, p {
     display: block;
     padding-top: 29px;
     padding-bottom: 29px;
-
+    
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, p {
     color: var(--accent-text-color);
 }
 
-.menu-nav .link:hover, .menu-nav .link:focus, .contacts .link:hover, .contacts .link:focus {
+.menu-nav .link:hover, .menu-nav .link:focus, .contacts .link:hover, .contacts .link:focus .menu-nav .tel:hover {
     color: var(--accent-text-color);
 }
 .contacts .link {
@@ -94,6 +94,32 @@ color: var(--second-text-color);
 }
 .nav-item:not(:last-child) {
     margin-right: 50px;
+}
+.nav-item {
+    align-items: center;
+}
+
+.contacts .link::before{
+    content: '';
+    
+    display: inline-block;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    outline: 1px solid tomato;
+}
+.email::before {
+    background-image: url('../images/email.svg');
+}
+.tel::before {
+    background-image: url('../images/smartphone.svg');
+}
+.nav-item a {
+align-items: center;
 }
 
 /* Section */
@@ -104,7 +130,13 @@ color: var(--second-text-color);
 /* Herro */
 .section.herro {
 background-color: var(--footer-background-color);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)
+),
+url('../images/hero.jpg');
+margin: 0 auto;
+background-position: center;
 height: 600px;
+max-width: 1600px;
 text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
@@ -129,6 +161,28 @@ padding-bottom: 200px;
 .feature .item {
     width: 270px;
 }
+.feature .item::before {
+    content: '';
+    margin-bottom: 30px;
+    display: block;
+    height: 120px;
+    background-color: var(--button-primary-background);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.feature .antenna::before{
+    background-image: url('../images/antenna.svg');
+}
+.feature .clock::before {
+    background-image: url('../images/clock.svg');
+}
+.feature .diagram::before{
+    background-image: url('../images/diagram.svg');
+}
+.feature .astronaut::before{
+    background-image: url('../images/astronaut.svg');
+}
 
 .feature .item:not(:last-child) {
     margin-right: 30px;
@@ -142,6 +196,8 @@ padding-bottom: 200px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+
 .feature-text {
     min-height: 75px;
     font-weight: 400;
